@@ -8,71 +8,66 @@
       body {
         background-color: rgb(194, 243, 243);
       }
-      ul {
-        list-style: none;
+      div {
+        padding: 5px;
       }
       label,
       input {
         font-size: 20px;
       }
       form {
-        border-style: outset;
-        padding-left: 80px;
+        padding: 20px;
       }
       h2 {
         background-color: blueviolet;
-        padding-left: 20px;
+        padding-left: 150px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+      }
+      h1 {
+        padding-left: 200px;
+        font-size: 30px;
+      }
+      fieldset {
+        box-shadow: 5px 5px 5px #828080, 20px 20px #f4f8f8,
+          inset -3px -3px 3px #fdfefe, inset -4px -4px #101010,
+          inset 3px 3px #717070, inset 4px 4px #101010;
       }
     </style>
   </head>
   <body>
-    <form action="">
-      <div>
-        <ul>
-          <li><h1>Loan Application</h1></li>
-        </ul>
-        <ul>
-          <li><h2>Applicant Infarmation</h2></li>
-        </ul>
-        <ul>
-          <li>
+    <form>
+      <fieldset>
+        <div>
+          <h1>Loan Application</h1>
+          <h2>Applicant Information</h2>
+          <div>
             <label for="fname">First Name:</label>
             <input id="fname" type="text" />
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </div>
+          <div>
             <label for="lname">Last Name:</label>
             <input id="lname" type="text" />
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </div>
+          <div>
             <label for="email">Email:</label>
             <input id="email" type="text" />
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </div>
+          <div>
             <label for="security">Social Security #:</label>
             <input id="security" type="password" />
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </div>
+          <div>
             <label for="dtel">Daytime Phone:</label>
             <input id="dtel" type="tel" />
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </div>
+          <div>
             <label for="etel">Evening Phone:</label>
             <input id="etel" type="tel" />
-          </li>
-        </ul>
-        <h2>Loan Infarmation</h2>
-        <ul>
-          <li>
+          </div>
+          <h2>Loan Information</h2>
+          <div>
             <label for="">Loan Type:</label>
             <select name="" id="">
               <option value="">Automobile</option>
@@ -80,27 +75,19 @@
               <option value="">Automobile</option>
               <option value="">Automobile</option>
             </select>
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </div>
+          <div>
             <label for="">Loan Amount $:</label>
             <input type="number" />
-          </li>
-        </ul>
-        <ul>
-          <li>
+          </div>
+          <div>
             <label for="des">Description:</label>
-            <textarea id="des" cols="50" rows="5"></textarea>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <label for="">Submit Application:</label>
-            <input type="submit" value="Apply For Loan" />
-          </li>
-        </ul>
-      </div>
+            <input id="des" style="width: 400px; height: 100px" type="text" />
+          </div>
+          <label for="">Submit Application:</label>
+          <input type="submit" value="Apply For Loan" />
+        </div>
+      </fieldset>
     </form>
   </body>
 </html>
