@@ -25,9 +25,12 @@
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
       }
-      form {
-        border-style: double;
+      fieldset {
         padding: 30px;
+      }
+      legend {
+        font-size: 20px;
+        color: darkblue;
       }
     </style>
   </head>
@@ -35,40 +38,42 @@
     <h1>GeeksforGeeks</h1>
     <h2>Basic form design HTML</h2>
     <form>
-      <h3 style="padding-bottom: 25px">Personal Details</h3>
-      <div>
-        <label for="fname">First name:</label>
-        <input id="fname" type="text" placeholder="First name :" />
-      </div>
-      <div>
-        <label for="lname">Last name:</label>
-        <input id="lname" type="text" placeholder="Last name :" />
-      </div>
-      <div>
-        <label for="">Gender:</label>
-        <input type="radio" name="gender" />
-        <label for="">Male</label>
-        <input type="radio" name="gender" />
-        <label for="">Female</label>
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="Ex:aliali@mail.ru" />
-      </div>
-      <div>
-        <label for="date">Date of Birth:</label>
-        <input id="date" type="date" />
-      </div>
-      <div>
-        <label for="adres">Address:</label><br />
-        <textarea
-          id="adres"
-          cols="50"
-          rows="5"
-          placeholder="Address:"
-        ></textarea>
-      </div>
-      <input type="submit" value="send" />
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div>
+          <label for="fname">First name:</label>
+          <input id="fname" type="text" placeholder="First name :" />
+        </div>
+        <div>
+          <label for="lname">Last name:</label>
+          <input id="lname" type="text" placeholder="Last name :" />
+        </div>
+        <div>
+          <label for="">Gender:</label>
+          <input type="radio" name="gender" />
+          <label for="">Male</label>
+          <input type="radio" name="gender" />
+          <label for="">Female</label>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" type="email" placeholder="Ex:aliali@mail.ru" />
+        </div>
+        <div>
+          <label for="date">Date of Birth:</label>
+          <input id="date" type="date" />
+        </div>
+        <div>
+          <label for="adres">Address:</label><br />
+          <textarea
+            id="adres"
+            cols="50"
+            rows="5"
+            placeholder="Address:"
+          ></textarea>
+        </div>
+        <input type="submit" value="send" />
+      </fieldset>
     </form>
   </body>
 </html>
