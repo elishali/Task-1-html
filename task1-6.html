@@ -8,32 +8,21 @@
       body {
         background-color: rgb(194, 243, 243);
       }
-      div {
-        padding: 5px;
-        padding-right: 200px;
-      }
       label,
       input {
         font-size: 20px;
       }
-      label {
-        padding-left: 60px;
-      }
-      form {
-        padding: 20px;
-      }
       h2 {
-        background-color: blueviolet;
-        padding-left: 150px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        background-color: rgb(163, 159, 242);
         font-size: 30px;
       }
       h1 {
-        padding-left: 200px;
-        font-size: 30px;
+        padding-left: 150px;
+        font-size: 40px;
       }
       fieldset {
+        width: 50%;
+        margin-left: 250px;
         box-shadow: 5px 5px 5px #828080, 20px 20px #f4f8f8,
           inset -3px -3px 3px #fdfefe, inset -4px -4px #101010,
           inset 3px 3px #717070, inset 4px 4px #101010;
@@ -41,57 +30,129 @@
     </style>
   </head>
   <body>
-    <form>
-      <fieldset>
-        <div>
-          <h1>Loan Application</h1>
-          <h2>Applicant Information</h2>
-          <div>
-            <label for="fname">First Name:</label>
-            <input id="fname" type="text" value="John" />
-          </div>
-          <div>
-            <label for="lname">Last Name:</label>
-            <input id="lname" type="text" value="Smith" />
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input id="email" type="email" value="john.smith@example.com" />
-          </div>
-          <div>
-            <label for="security">Social Security #:</label>
-            <input id="security" type="text" value="123-45-6789" />
-          </div>
-          <div>
-            <label for="dtel">Daytime Phone:</label>
-            <input id="dtel" type="tel" value="2039299400" />
-          </div>
-          <div>
-            <label for="etel">Evening Phone:</label>
-            <input id="etel" type="tel" value="2035551212" />
-          </div>
-          <h2>Loan Information</h2>
-          <div>
-            <label for="select">Loan Type:</label>
-            <select id="select">
-              <option value="">Hundai</option>
-              <option value="">Opel</option>
-              <option value="">Chevrolet</option>
-              <option value="">Kia</option>
-            </select>
-          </div>
-          <div>
-            <label for="">Loan Amount $:</label>
-            <input type="number" value="15000" />
-          </div>
-          <div>
-            <label for="des">Description:</label>
-            <input id="des" style="width: 400px; height: 100px" type="text" />
-          </div>
-          <label for="">Submit Application:</label>
-          <input type="submit" value="Apply For Loan" />
-        </div>
-      </fieldset>
-    </form>
+    <fieldset>
+      <h1>Loan Aplication</h1>
+      <form action="">
+        <table align="left" style="padding-left: 5px">
+          <thead>
+            <tr>
+              <th colspan="2" align="center">
+                <h2>Aplication information:</h2>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="end">
+                <label for="fname">First Name:</label>
+              </td>
+              <td>
+                <input id="fname" type="text" value="John" style="width: 90%" />
+              </td>
+            </tr>
+            <tr>
+              <td align="end"><label for="lname">Last Name:</label></td>
+              <td>
+                <input
+                  id="lname"
+                  type="text"
+                  value="Smith"
+                  style="width: 90%"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="end"><label for="email">Email:</label></td>
+              <td>
+                <input
+                  id="email"
+                  type="email"
+                  value="john.smith@example.com"
+                  style="width: 90%"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="end">
+                <label for="security">Social Security #:</label>
+              </td>
+              <td>
+                <input
+                  id="security"
+                  type="text"
+                  value="123-45-6789"
+                  style="width: 45%"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="end"><label for="dtel">Daytime Phone:</label></td>
+              <td>
+                <input
+                  id="dtel"
+                  type="tel"
+                  value="2039299400"
+                  style="width: 45%"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="end"><label for="etel">Evening Phone:</label></td>
+              <td>
+                <input
+                  id="etel"
+                  type="tel"
+                  value="2035551212"
+                  style="width: 45%"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2" align="center"><h2>Loan Information</h2></th>
+            </tr>
+            <tr>
+              <td align="end"><label for="select">Loan Type:</label></td>
+              <td>
+                <select id="select" style="font-size: 20px">
+                  <option value="Automobile">Automobile</option>
+                  <option value="Hundai">Hundai</option>
+                  <option value="Opel">Opel</option>
+                  <option value="Chevrolet">Chevrolet</option>
+                  <option value="Kia">Kia</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td align="end"><label for="loan">Loan Amount $:</label></td>
+              <td>
+                <input
+                  id="loan"
+                  type="number"
+                  value="15000"
+                  step="5"
+                  min="10000"
+                  max="30000"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="end"><label for="des">Description:</label></td>
+              <td>
+                <textarea
+                  id="des"
+                  cols="50"
+                  rows="5"
+                  placeholder="Application to finance the purchase of a Toyota Prius."
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td align="end"><label for="">Submit Application:</label></td>
+              <td><input type="submit" value="Apply For Loan" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </fieldset>
   </body>
 </html>
